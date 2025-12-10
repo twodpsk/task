@@ -1,0 +1,186 @@
+/* ---------- 기본 ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* ---------- 상단 텍스트 배너 ---------- */
+.top-banner {
+  width: 100%;
+  background: #ff9bbd;
+  color: #111;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- 메인 슬라이더 ---------- */
+.main-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 650px; /* slide1 & slide2 동일 비율 유지 */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-text {
+  position: absolute;
+  color: #111;
+}
+
+.slide-text.center {
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slide-text.right {
+  right: 5%; top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+/* 버튼 */
+.prev, .next {
+  position: absolute; top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+.dot.active { background: #ff9bbd; }
+
+/* ---------- 카테고리 ---------- */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0 40px;
+}
+.circle img {
+  width: 80px; height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ---------- 공통 섹션 ---------- */
+.product-section {
+  padding: 60px 20px 80px;
+  text-align: center;
+}
+
+.product-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff9bbd;
+  display: inline-block;
+}
+
+/* 신상 이미지 — 🔥 new.png만 크기 축소 */
+#new-section .product-img-box.single img {
+  width: 45%;   /* 기존 65% → 45% 로 축소 */
+  margin-top: 20px;
+  border-radius: 10px;  
+}
+
+/* ---------- 베스트 설명 텍스트 ---------- */
+.best-text-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.best-text-box p {
+  font-size: 14px;
+  margin-top: 5px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* ---------- 베스트 슬라이더 ---------- */
+.best-slider {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  justify-content: center;
+}
+
+.best-track {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.best-item {
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+.best-item img {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* BEST 아래 전래동화 제목 */
+.legend {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------- 브랜드 영역 ---------- */
+.bottom-section {
+  padding: 80px 20px;
+  background: #dff6f5;
+  text-align: center;
+}
+
+.brand-logo img { width: 120px; margin-bottom: 25px; }
+
+.bottom-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bottom-item img {
+  width: 150px;
+  border-radius: 12px;
+}

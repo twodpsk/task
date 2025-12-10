@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YENASODAM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔥 상단 텍스트 배너 -->
+  <section class="top-banner" onclick="location.href='#event-section'">
+    [EVENT] 예나소담 단독 혜택
+  </section>
+
+  <!-- 메인 슬라이더 -->
+  <section class="main-slider" aria-label="Hero slider">
+
+    <div class="slide">
+      <img src="images/slide1.png" alt="slide1" />
+      <div class="slide-text center">
+        <h1>시간을 건너 온 전통의 빛,<br>피부에 머물다</h1>
+        <p class="sub">전래 성분의 지혜와 감성을 담아<br>한국의 아름다움을 현대 스킨케어로 재해석합니다.</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/slide2.png" alt="slide2" />
+      <div class="slide-text right">
+        <h2>전통의 빛, 피부에 스며들다</h2>
+        <p class="sub">한국 전통 성분과 현대 기술이 만나는 피부 건강</p>
+      </div>
+    </div>
+
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+
+    <div class="dots">
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+    </div>
+  </section>
+
+  <!-- 하단 3개 카테고리 -->
+  <section class="categories">
+    <div class="cat-item" onclick="location.href='#new-section'">
+      <div class="circle"><img src="images/icon1.png" alt="신상"></div>
+      <p>신상</p>
+    </div>
+
+    <div class="cat-item" onclick="location.href='#best-section'">
+      <div class="circle"><img src="images/icon2.png" alt="베스트"></div>
+      <p>베스트</p>
+    </div>
+
+    <div class="cat-item" onclick="location.href='#event-section'">
+      <div class="circle"><img src="images/icon3.png" alt="이벤트"></div>
+      <p>이벤트</p>
+    </div>
+  </section>
+
+  <!-- 신상 -->
+  <section id="new-section" class="product-section">
+    <h2>신상</h2>
+
+    <div class="new-text-box">
+      <h3>K-Beauty 노하우가 빚은, 남성 스킨케어 출시</h3>
+      <p>여성 피부에 쌓아온 오랜 노하우, 이제 남성 피부 고민에 오롯이 집중 코스모스의 자연 에너지가 강하고 건강한 피부 바탕을 완성하다</p>
+    </div>
+
+    <div class="product-img-box single">
+      <img src="images/new.png" alt="신상 이미지">
+    </div>
+  </section>
+
+  <!-- 베스트 -->
+  <section id="best-section" class="product-section">
+    <h2>베스트</h2>
+
+    <!-- 베스트 설명 텍스트 -->
+    <div class="best-text-box">
+      <h3>옛 이야기에서 찾은 아름다움으로</h3>
+      <p>과거의 상징을 오늘의 아름다움으로 재해석하다</p>
+    </div>
+
+    <div class="best-slider">
+      <div class="best-track">
+
+        <div class="best-item">
+          <img src="images/best1.png" alt="">
+          <p class="legend">해와 달이 된 오누이</p>
+        </div>
+
+        <div class="best-item">
+          <img src="images/best2.png" alt="">
+          <p class="legend">흥부전</p>
+        </div>
+
+        <div class="best-item">
+          <img src="images/best3.png" alt="">
+          <p class="legend">춘향전</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 이벤트 -->
+  <section id="event-section" class="product-section">
+    <h2>이벤트</h2>
+    <div class="product-img-box single">
+      <img src="images/event.png" alt="이벤트 이미지">
+    </div>
+  </section>
+
+  <!-- 브랜드 영역 -->
+  <section class="bottom-section">
+    <div class="brand-logo">
+      <img src="images/logo.png" alt="YENASODAM Logo">
+    </div>
+
+    <div class="brand-text">
+      <p>예나소담은 전통과 자연을 담은 클린뷰티를 지향합니다.</p>
+      <p>자연 성분만 엄선하여 피부에 건강한 아름다움을 전합니다.</p>
+      <p>동물성 원료와 동물 실험을 사용하지 않는 착한 브랜드입니다.</p>
+      <p>사람과 자연 모두를 생각하는 아름다움을 고민합니다.</p>
+    </div>
+
+    <div class="bottom-container">
+      <div class="bottom-item"><img src="images/bottom1.png" alt=""></div>
+      <div class="bottom-item"><img src="images/bottom2.png" alt=""></div>
+      <div class="bottom-item"><img src="images/bottom3.png" alt=""></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
